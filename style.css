@@ -242,7 +242,7 @@ html {
     margin: 0;
     color: #ff1f20;
     font-weight: 700;
-    font-size: 60px;
+    font-size: 40px;
     line-height: 120%;
     text-transform: uppercase;
 }
@@ -272,6 +272,8 @@ html {
     justify-content: center;
     align-items: center;
     margin-bottom: 8px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s;
 }
 
 .showcase__info-item a {
@@ -318,7 +320,7 @@ html {
 }
 
 .showcase__img {
-    max-height: 85%;
+    max-height: 90%;
     position: absolute;
     top: 0;
     right: 30px;
@@ -382,10 +384,10 @@ html {
     align-items: flex-start;
 }
 
-.tech__images img:last-child {
+.tech__images img:nth-child(2) {
     position: absolute;
     top: 0;
-    left: 297px;
+    left: 312px;
     z-index: -1;
 }
 
