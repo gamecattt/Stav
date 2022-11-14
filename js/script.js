@@ -27,3 +27,14 @@ const header = document.querySelector('.header')
 burger.addEventListener('click', function () {
     header.classList.toggle('open')
 })
+
+//
+const scrollLink = document.querySelector('.scroll-link')
+const showcase = document.querySelector('.showcase')
+
+scrollLink.addEventListener('click', function (event) {
+    event.preventDefault()
+    showcase.scrollIntoView({
+        behavior: 'smooth',
+    })
+})
