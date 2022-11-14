@@ -93,7 +93,7 @@ html {
 /* lead */
 
 .lead {
-    background-image: url(./images/lead-img.png);
+    background-image: url(../images/lead-img.png);
     background-size: cover;
     padding: 180px 0;
     color: #fff;
@@ -181,7 +181,7 @@ html {
 /* intro */
 
 .intro {
-    background-image: url(./images/intro-img.png);
+    background-image: url(../images/intro-img.png);
     background-size: cover;
     padding: 160px 0;
     margin-bottom: 100px;
