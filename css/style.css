@@ -893,6 +893,7 @@ html {
     height: 60px;
     transition-duration: 0.5s;
     position: relative;
+    display: none;
 }
 .burger .icon-left {
     transition-duration: 0.5s;
