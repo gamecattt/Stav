@@ -47,7 +47,7 @@
     }
     .footer__types nav,
     .footer__info nav {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
     .showcase__item {
         grid-column: span 3;
@@ -61,6 +61,10 @@
 }
 
 @media (max-width: 1199px) {
+    .lang__link {
+        margin-left: auto;
+        margin-right: 30px;
+    }
     .burger {
         display: block;
         cursor: pointer;
@@ -104,6 +108,7 @@
     }
     .footer .container {
         grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
     }
     .footer__copyright {
         grid-row: 2;

@@ -7,6 +7,18 @@ html {
     box-sizing: inherit;
 }
 
+input,
+button,
+select,
+textarea,
+optgroup,
+option {
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+}
+
 .page {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
@@ -79,15 +91,46 @@ html {
     font-size: 16px;
     line-height: 20px;
     padding: 25px;
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
 }
 
-.header__link:hover {
-    background-color: rgb(255, 31, 32, 0.6);
+.header__link:hover,
+.header__link.active {
+    background-color: #ff1f20;
 }
 
 .open .header__nav {
     transform: translateX(0);
+}
+
+.lang {
+    position: relative;
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+.lang__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.lang__list {
+    background-color: #1e2632;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.lang:hover .lang__list {
+    opacity: 1;
+    visibility: visible;
+}
+
+.lang__list .lang__link {
+    padding: 15px 25px;
 }
 
 /* lead */
@@ -264,7 +307,7 @@ html {
     margin: 0;
     color: #ff1f20;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 60px;
     line-height: 120%;
     text-transform: uppercase;
 }
@@ -341,6 +384,14 @@ html {
     gap: 15px;
 }
 
+.showcase__description-link img {
+    transition: transform 0.3s;
+}
+
+.showcase__description-link:hover img {
+    transform: translate(10px, 0);
+}
+
 .showcase__img {
     max-height: 90%;
     position: absolute;
@@ -351,6 +402,10 @@ html {
 .showcase-category__item .showcase__info {
     bottom: 20px;
     top: auto;
+}
+
+.showcase-category__item .showcase__info-title {
+    font-size: 40px;
 }
 
 .showcase-category__item .showcase__info-subtitle {
@@ -483,9 +538,11 @@ html {
     margin: 0 -10px;
 }
 
+.slider img {
+    max-width: 100%;
+}
+
 .slider__item {
-    width: 800px;
-    height: 500px;
     position: relative;
     margin: 0 10px;
 }
@@ -733,6 +790,7 @@ html {
     font-size: 16px;
     line-height: 170%;
     background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
 }
 
 .callback .form__input::placeholder {
