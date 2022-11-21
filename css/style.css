@@ -1259,6 +1259,7 @@ option {
     line-height: 150%;
     background-color: rgba(255, 255, 255, 0.15);
     font-family: 'Montserrat', sans-serif;
+    color: #fff;
 }
 
 .client-form__input::placeholder {
@@ -1275,6 +1276,7 @@ option {
     line-height: 150%;
     background-color: rgba(255, 255, 255, 0.15);
     font-family: 'Montserrat', sans-serif;
+    color: #fff;
 }
 
 .client-form__textarea::placeholder {
@@ -1283,6 +1285,39 @@ option {
 }
 
 .client-form__input_type_file {
+    color: #fff;
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+.client-form__input_type_file img {
+    width: 27px;
+    height: 24px;
+    margin-right: 20px;
+}
+
+.client-form__input_type_file h6 {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 170%;
+}
+
+.client-form__input_type_file p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 170%;
+    opacity: 0.6;
+}
+
+.client-form__input_type_file input {
+    display: none;
+}
+
+.client-form__comment {
+    padding-left: 20px;
+    border-left: 1px solid rgba(117, 125, 140, 0.5);
 }
 
 .client-form__btn-submit {
@@ -1308,13 +1343,6 @@ option {
     gap: 15px;
 }
 
-.client-form__comment {
-    margin: 0;
-    font-size: 13px;
-    line-height: 170%;
-    color: #fff;
-}
-
 .client-form textarea {
     grid-column: 2/3;
     grid-row: 1/4;
@@ -1326,9 +1354,13 @@ option {
     opacity: 0;
 }
 .custom-checkbox + label {
-    display: inline-flex;
-    align-items: center;
     user-select: none;
+    margin: 0;
+    font-size: 13px;
+    line-height: 170%;
+    color: #fff;
+    padding-left: 40px;
+    position: relative;
 }
 .custom-checkbox + label::before {
     content: '';
@@ -1336,13 +1368,16 @@ option {
     display: inline-block;
     width: 22px;
     height: 22px;
-    background-color: #ff1f20;
+    background-color: rgba(255, 255, 255, 0.15);
     background-repeat: no-repeat;
     background-position: center;
+    position: absolute;
+    left: 0;
 }
 
 .custom-checkbox:checked + label::before {
     background-image: url(../images/icon-checkbox.svg);
+    background-color: #ff1f20;
 }
 
 /* info-list */
