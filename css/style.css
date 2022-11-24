@@ -106,7 +106,6 @@ option {
 .lang {
     position: relative;
     margin-left: auto;
-    margin-right: 30px;
 }
 
 .lang__link {
@@ -414,6 +413,118 @@ option {
     text-transform: uppercase;
     opacity: 1;
     color: #000;
+}
+
+.showcase__item.banner {
+    background-image: url(../images/banner-back.png);
+    background-color: #ff1f20;
+    color: #fff;
+    padding: 60px 90px 0 70px;
+    grid-column: span 6;
+    display: flex;
+    justify-content: space-between;
+}
+
+.showcase__item.banner_size_s {
+    grid-column: span 4;
+}
+
+.showcase__item.banner_size_xs {
+    grid-column: span 2;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 38px;
+}
+
+.banner__title {
+    max-width: 342px;
+    width: 100%;
+    margin: 40px 0 30px;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 120%;
+    text-transform: uppercase;
+}
+
+.banner_size_xs .banner__title {
+    margin-top: 30px;
+}
+
+.banner__title span {
+    font-weight: 400;
+}
+
+.banner_size_s .banner__text,
+.banner_size_xs .banner__text {
+    display: none;
+}
+
+.banner .form {
+    display: flex;
+    gap: 30px;
+}
+
+.banner_size_s .form {
+    flex-direction: column;
+    margin-top: 33px;
+}
+
+.banner .form__input {
+    display: block;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 350px;
+    height: 64px;
+    padding: 0 20px;
+    font-size: 16px;
+    line-height: 150%;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.banner_size_s .form__input {
+    width: 470px;
+}
+
+.banner_size_xs .form__input {
+    display: none;
+}
+
+.banner .form__input::placeholder {
+    color: #fff;
+    opacity: 0.6;
+}
+
+.banner .form__btn-submit {
+    color: #000;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    text-transform: uppercase;
+    background-color: #fff;
+    cursor: pointer;
+    border: none;
+    padding: 16.5px 24px;
+    transition: opacity 0.2s;
+}
+
+.banner_size_s .form__btn-submit {
+    max-width: 470px;
+}
+
+.banner_size_s .form__btn-submit {
+    max-width: 342px;
+    max-height: 60px;
+}
+
+.banner .form__btn-submit:hover {
+    opacity: 0.8;
+}
+
+.banner_size_xs .logo__img {
+    width: 108px;
+    height: 25px;
 }
 
 /* tech */
