@@ -455,7 +455,7 @@ option {
 }
 
 .banner__text {
-    margin-bottom: 50px;
+    margin: 40px 0 50px;
     font-size: 14px;
     line-height: 170%;
 }
