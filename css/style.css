@@ -517,10 +517,6 @@ option {
 
 .banner_size_s .form__btn-submit {
     max-width: 470px;
-}
-
-.banner_size_s .form__btn-submit {
-    max-width: 342px;
     max-height: 60px;
 }
 
