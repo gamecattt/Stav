@@ -454,6 +454,12 @@ option {
     font-weight: 400;
 }
 
+.banner__text {
+    margin-bottom: 50px;
+    font-size: 14px;
+    line-height: 170%;
+}
+
 .banner_size_s .banner__text,
 .banner_size_xs .banner__text {
     display: none;
