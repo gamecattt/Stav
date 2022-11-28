@@ -20,11 +20,14 @@ $('.products-slider').slick({
     ],
 })
 
-$('.catalog-grid__slider').slick({
-    slidesToShow: 1,
-    dots: true,
-    prevArrow: '.catalog-grid .slider__arrow-prev',
-    nextArrow: '.catalog-grid .slider__arrow-next',
+$('.catalog-grid__row').each(function () {
+    const el = $(this)
+    $('.catalog-grid__slider', el).slick({
+        slidesToShow: 1,
+        dots: true,
+        prevArrow: $('.slider__arrow-prev', el),
+        nextArrow: $('.slider__arrow-next', el),
+    })
 })
 
 //
