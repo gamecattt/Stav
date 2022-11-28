@@ -20,6 +20,13 @@ $('.products-slider').slick({
     ],
 })
 
+$('.catalog-grid__slider').slick({
+    slidesToShow: 1,
+    dots: true,
+    prevArrow: '.catalog-grid .slider__arrow-prev',
+    nextArrow: '.catalog-grid .slider__arrow-next',
+})
+
 //
 const burger = document.querySelector('.burger')
 const header = document.querySelector('.header')
