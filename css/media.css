@@ -188,6 +188,10 @@
     .header__nav .header__link {
         font-size: 24px;
     }
+
+    .showcase__img {
+        max-width: 75%;
+    }
     .callback .container {
         flex-direction: column;
         gap: 20px;
@@ -384,11 +388,15 @@
         display: none;
     }
     .showcase__img {
-        max-width: 100%;
+        max-width: 72%;
         right: 0;
     }
     .showcase .container {
         grid-auto-rows: 250px;
+    }
+
+    .showcase__info-item {
+        justify-content: flex-start;
     }
 
     .contacts__banner {
