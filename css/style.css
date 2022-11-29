@@ -111,7 +111,8 @@ option {
     transition: background-color 0.2s ease-in-out;
 }
 
-.header__link:hover,
+.header__nav .header__link:hover,
+.lang__list .lang__link:hover,
 .header__link.active {
     background-color: #ff1f20;
 }
@@ -1277,6 +1278,7 @@ option {
 }
 
 .grid__text {
+    margin-top: 0;
     font-weight: 400;
     font-size: 16px;
     line-height: 170%;
@@ -1556,7 +1558,6 @@ option {
 }
 
 .info__item {
-    max-width: 337px;
     background-color: #fff;
     position: relative;
     background-repeat: no-repeat;
