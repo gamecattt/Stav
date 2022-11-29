@@ -1991,6 +1991,11 @@ option {
     margin-bottom: 100px;
 }
 
+.records__wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 .records__title {
     margin: 0 0 40px;
     font-weight: 500;
@@ -2004,16 +2009,46 @@ option {
     margin: 0;
     padding: 0;
     display: flex;
-}
-
-.records__item {
-}
-
-.records__img {
+    justify-content: space-between;
 }
 
 .records__text {
+    margin: 20px 0 0;
     font-size: 14px;
+    line-height: 170%;
+    max-width: 337px;
+    width: 100%;
+}
+
+/* service */
+
+.service {
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: -180px;
+}
+
+.service .container {
+    display: flex;
+    gap: 110px;
+}
+
+.service__img {
+}
+
+.service__info {
+    max-width: 620px;
+}
+
+.service__title {
+    margin: 0 0 25px;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 130%;
+    text-transform: uppercase;
+}
+
+.service__main-text {
     line-height: 170%;
 }
 
