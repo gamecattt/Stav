@@ -119,6 +119,12 @@
         padding-right: 75px;
         padding-left: 0;
     }
+    .category-grid__img {
+        max-width: 150px;
+    }
+    .category-grid__info {
+        padding: 75px 15px;
+    }
 }
 
 @media (max-width: 1399px) {
@@ -132,6 +138,9 @@
         padding: 20px;
         font-size: 20px;
         line-height: 24px;
+    }
+    .category-grid__content {
+        display: block;
     }
 }
 
