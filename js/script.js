@@ -30,6 +30,14 @@ $('.catalog-grid__row').each(function () {
     })
 })
 
+$('.product__slider').each(function () {
+    $(this).slick({
+        slidesToShow: 1,
+        dots: true,
+        arrows: false,
+    })
+})
+
 //
 const burger = document.querySelector('.burger')
 const header = document.querySelector('.header')
