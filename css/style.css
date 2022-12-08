@@ -1386,6 +1386,7 @@ option {
     color: #fff;
     padding-left: 40px;
     position: relative;
+    cursor: pointer;
 }
 .custom-checkbox + label::before {
     content: '';
@@ -1401,7 +1402,7 @@ option {
 }
 .custom-checkbox:checked + label::before {
     background-image: url(../images/icon-checkbox.svg);
-    background-color: #ff1f20;
+    background-color: #ff1f20 !important;
 }
 
 /* info-list */
@@ -2152,6 +2153,147 @@ option {
 .details .catalog-grid__icon {
     background-color: #fff;
 }
+
+/* popup */
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+}
+.popup__container {
+    background-color: #fff;
+    position: relative;
+    max-width: 630px;
+    width: 100%;
+    padding: 50px 60px 60px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+.popup_opened {
+    opacity: 1;
+    visibility: visible;
+}
+.popup__title {
+    margin: 0 0 20px;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 130%;
+    text-transform: uppercase;
+}
+.popup__btn-close {
+    position: absolute;
+    cursor: pointer;
+    border: none;
+    min-width: 30px;
+    min-height: 30px;
+    top: 40px;
+    right: 40px;
+    padding: 0;
+    background-color: #fff;
+    background-image: url(../images/btn-close.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.popup__btn-close:hover {
+    background-image: url(../images/btn-close-hover.svg);
+}
+.popup__btn-submit {
+    width: 100%;
+    border: none;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 150%;
+}
+.popup__input {
+    display: block;
+    font-size: 16px;
+    line-height: 150%;
+    width: 100%;
+    padding: 14px 20px;
+    margin-bottom: 15px;
+    border: 2px solid #dfe1f0;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+.popup__input:focus {
+    border-color: #000;
+}
+.popup__caption {
+    display: block;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 170%;
+    text-transform: uppercase;
+    opacity: 0.5;
+    margin-bottom: 5px;
+}
+.popup__text {
+    line-height: 170%;
+    margin: 0 0 20px;
+}
+.popup__checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.popup .custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.popup .custom-checkbox + label {
+    color: #000;
+}
+.popup .custom-checkbox + label::before {
+    background-color: #dfe1f0;
+}
+.popup__grid {
+    padding: 10px 0;
+    display: grid;
+    align-items: center;
+    background-color: #f9f9f9;
+    margin-bottom: 30px;
+    grid-template-columns: 117px auto 145px;
+}
+.popup__product-info {
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+}
+.popup__product-info p {
+    max-width: 209px;
+    margin: 0 0 10px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 120%;
+}
+.popup__product-info span,
+.popup__product-price span {
+    display: block;
+    font-size: 13px;
+    line-height: 160%;
+    margin-bottom: 5px;
+}
+.popup__product-price {
+    padding: 0 20px;
+}
+.popup__product-price strong {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 160%;
+}
+
 @keyframes fire {
     0% {
         opacity: 1;

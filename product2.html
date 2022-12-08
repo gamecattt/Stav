@@ -647,6 +647,37 @@
                 </div>
             </div>
         </footer>
+        <div class="popup popup_opened">
+            <div class="popup__container">
+                <h2 class="popup__title">Оформить заявку</h2>
+                <span class="popup__caption"> Вы выбрали: </span>
+                <div class="popup__grid">
+                    <img src="./images/option-item.png" alt="" />
+                    <div class="popup__product-info">
+                        <p>ТОПКА F 750B</p>
+                        <span>Ширина топки: 750</span>
+                        <span>Цвет топки: White</span>
+                    </div>
+                    <div class="popup__product-price">
+                        <span>Цена:</span>
+                        <span><strong>345 531</strong> руб.</span>
+                    </div>
+                </div>
+                <div class="popup__text">Заполните форму, и мы свяжемся с Вами в ближайшее время.</div>
+                <form action="">
+                    <input class="popup__input" type="text" name="username" placeholder="Имя" required="" id="username-input" />
+                    <input class="popup__input" type="tel" name="tel" placeholder="Телефон" required="" id="tel-input" />
+                    <input class="popup__input" type="email" name="email" placeholder="E-mail" required="" id="email-input" />
+                    <input class="popup__input" type="text" name="city" placeholder="Город" required="" id="email-input" />
+                    <div class="popup__checkbox">
+                        <input class="custom-checkbox" type="checkbox" id="popup-checkbox" required />
+                        <label for="popup-checkbox">Нажимая "отправить заявку" я соглашаюсь с условиями хранения персональных данных</label>
+                    </div>
+                    <button class="popup__btn-submit btn" type="submit">Заказать</button>
+                </form>
+                <button class="popup__btn-close" type="button" aria-label="Закрыть"></button>
+            </div>
+        </div>
         <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script src="./js/script.js" defer></script>
