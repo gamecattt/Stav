@@ -50,9 +50,36 @@ burger.addEventListener('click', function () {
 const scrollLink = document.querySelector('.scroll-link')
 const showcase = document.querySelector('.showcase')
 
-scrollLink.addEventListener('click', function (event) {
-    event.preventDefault()
-    showcase.scrollIntoView({
-        behavior: 'smooth',
+if (scrollLink) {
+    scrollLink.addEventListener('click', function (event) {
+        event.preventDefault()
+        showcase.scrollIntoView({
+            behavior: 'smooth',
+        })
     })
+}
+
+//
+$('[data-popup]').click(function () {
+    $(`#${$(this).data('popup')}`).addClass('popup_opened')
+    return false
+})
+
+$('.popup__btn-close').click(function () {
+    $(this).closest('.popup').removeClass('popup_opened')
+})
+
+$('.popup').click(function (e) {
+    if (e.target != this) return
+    $(this).removeClass('popup_opened')
+})
+
+//
+$('.lang > .lang__link').click(function () {
+    $('.lang__list').toggleClass('active')
+    return false
+})
+
+$('.dot').click(function () {
+    $('.tech__images img:nth-child(2)').attr('src', './images/banner-img2.png')
 })

@@ -56,11 +56,23 @@
                         </ul>
                     </nav>
                 </div>
-                <a class="header__link" href="#">
-                    <img src="./images/Flag_of_Russia.png" alt="флаг" />
-                    <span>Ru</span>
-                    <img src="./images/icon-arrow.png" alt="стрелка" />
-                </a>
+                <div class="lang">
+                    <a class="header__link lang__link" href="#">
+                        <img src="./images/Flag_of_Russia.png" alt="флаг" />
+                        <span>Ru</span>
+                        <img src="./images/icon-arrow.png" alt="стрелка" />
+                    </a>
+                    <div class="lang__list">
+                        <a class="header__link lang__link active" href="#">
+                            <img src="./images/Flag_of_Russia.png" alt="флаг" />
+                            <span>Ru</span>
+                        </a>
+                        <a class="header__link lang__link" href="#">
+                            <img src="./images/Flag_of_Russia.png" alt="флаг" />
+                            <span>En</span>
+                        </a>
+                    </div>
+                </div>
                 <div class="burger">
                     <div class="icon-left"></div>
                     <div class="icon-right"></div>
@@ -143,7 +155,7 @@
                             </div>
                             <div class="catalog-grid__price-box">
                                 <span>Цена:<strong class="catalog-grid__price">345 531</strong>руб.</span>
-                                <a href="#" class="btn btn_size_l">Узнать больше</a>
+                                <a href="#" class="btn btn_size_l" data-popup="popup-order">Узнать больше</a>
                             </div>
                         </div>
                     </div>
@@ -647,7 +659,7 @@
                 </div>
             </div>
         </footer>
-        <div class="popup popup_opened">
+        <div class="popup">
             <div class="popup__container">
                 <h2 class="popup__title">Оформить заявку</h2>
                 <span class="popup__caption"> Вы выбрали: </span>
