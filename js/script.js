@@ -83,3 +83,11 @@ $('.lang > .lang__link').click(function () {
 $('.dot').click(function () {
     $('.tech__images img:nth-child(2)').attr('src', './images/banner-img2.png')
 })
+
+//
+const playLink = document.querySelector('.lead .play-link')
+const video = document.querySelector('.lead video')
+playLink.addEventListener('click', function () {
+    playLink.remove()
+    video.play()
+})

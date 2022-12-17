@@ -172,6 +172,9 @@
     .details__column-left_position_top {
         position: static;
     }
+    .tech__images {
+        margin-left: 150px;
+    }
 }
 
 @media (max-width: 1399px) {
@@ -230,6 +233,9 @@
     .catalog-grid__price-box span {
         padding: 20px;
         margin-bottom: 30px;
+    }
+    .tech__images {
+        margin-left: 56px;
     }
 }
 
@@ -348,6 +354,9 @@
     }
     .details__props-list {
         margin-bottom: 50px;
+    }
+    .tech__images {
+        margin-left: 0;
     }
 }
 
